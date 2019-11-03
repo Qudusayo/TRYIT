@@ -1,0 +1,75 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+  margin-top: 40%;
+  transition: all 3s;
+  overflow: auto;
+}
+.heads{
+  cursor: pointer;
+  transition: all 3s;
+  text-align: center;
+  width: 100%;
+}
+.nd-head{
+  padding: .3em;
+  letter-spacing: .5em;
+  margin-right: 10%;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.hnd-head{
+  padding: .3em;
+  letter-spacing: .5em;
+  margin-left: 10%;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+h2{
+  text-align: center;
+  font-weight: bold;
+}
+#nds{
+  /* display: flexbox; */
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: auto;
+}
+.nd{
+  height: 8em;
+  width: 100%;
+  position: relative;
+}
+button{
+  text-transform: uppercase;
+  font-weight: bolder;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  outline: none;
+  border: none;
+  transition: all 2s;
+}
+/* .dropdown, .list{
+  position: absolute;
+} */
+span{
+  position: absolute;
+}
+button:focus{
+  opacity: 0;
+  z-index: -5;
+  transform: translateX(500px);
+}
+a{
+  cursor: pointer;
+}
+@media screen and (min-width: 600px){
+  body{
+    margin-top: 20%;
+    transition: all 3s;    
+  }  
+}

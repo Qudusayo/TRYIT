@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Online Tutorial Hub</title>
+
+    <!-- You can use any of the  css file, but  the minified version is  the best -->
+    <link href="signin.css" rel="stylesheet">
+
+    <!-- This is  the logo in the title bar -->
+    <link rel="icon" href="logo.png">
+
+  </head>
+  <body>
+    <h2>Select Level And Program</h2>
+    <div class="heads">
+      <i class="nd-head" id="ndes">ND</i>
+     <i class="hnd-head" id="hnds">HND</i>    
+    </div>
+    <br>
+    <div id="nds">
+    </div>
+
+    <script>
+      document.querySelector('#ndes').addEventListener('click', function(){
+        document.querySelector('body').style.marginTop = '-5%';
+        document.querySelector('#nds').innerHTML = 
+        `
+        <div class="nd">
+        <button class="dropdown">nd1 | ft/dpp</button>
+        <span class="list">
+          <ul>
+            <li><a href='www.google.com'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="nd">
+        <button class="dropdown">nd1 | pt</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="nd">
+        <button class="dropdown">nd2 | ft/dpp</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="nd">
+        <button class="dropdown">nd2 | pt</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+        `
+      })
+      document.querySelector('#hnds').addEventListener('click', function(){
+        document.querySelector('body').style.marginTop = '-5%';
+        document.querySelector('#nds').innerHTML = 
+        `
+        <div class="nd">
+        <button class="dropdown">hnd1 | ft/dpp</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="nd">
+        <button class="dropdown">hnd1 | pt</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="nd">
+        <button class="dropdown">hnd2 | ft/dpp</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="nd">
+        <button class="dropdown">hnd2 | pt</button>
+        <span class="list">
+          <ul>
+            <li><a href='#'>1st Semester</a></li>
+            <li><a href='#'>2nd Semester</a></li>
+          </ul>
+        </span>
+      </div>
+        `
+      })
+    </script>
+  </body>
+</html>
